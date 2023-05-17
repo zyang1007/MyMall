@@ -2,6 +2,7 @@ package com.mymall2023.mbg.mapper;
 
 import com.mymall2023.mbg.model.PmsBrand;
 import com.mymall2023.mbg.model.PmsBrandExample;
+import io.swagger.annotations.ApiModelProperty;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
