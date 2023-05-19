@@ -52,7 +52,8 @@ public class Swagger2Config {
     private List<SecurityContext> securityContexts() {
         //设置需要登录认证的路径
         List<SecurityContext> result = new ArrayList<>();
-        result.add(getContextByPath("/brand/.*"));
+        // fix the issue of "not login or no permission" in UmsAdminController's getPermission()
+        result.add(getContextByPath("/*/.*"));
         return result;
     }
 
